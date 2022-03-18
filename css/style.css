@@ -46,7 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }  
- 
+
 /* lato-regular - latin */
 @font-face {
   font-family: 'Lato';
@@ -90,13 +90,42 @@ body {
   font-weight: normal;
   color:#102746;
 }
-
 .wraper {
   max-width: 1060px;
   margin: 0 auto;
 }
-
 .header {
   background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
-
+.header__wraper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 56px;
+}
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header__item {
+  margin-right: 82px;
+}
+.header__item:last-child {
+  margin-right: 0px;
+}
+.header__link {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.header__link:hover, .header__link:focus, .header__link:active {
+  opacity: .75;
+}
